@@ -3,7 +3,7 @@
 App para descifrar recetas médicas manuscritas: foto → lectura en el dispositivo → medicamentos
 sugeridos con nivel de confianza → confirmación humana. Público principal: empleados de farmacia.
 iOS primero (Swift/SwiftUI); Android nativo después, con las mismas capas.
-Las reglas globales están en `/Users/lbyachelini/Projects/AGENTS.md`; este archivo gana sobre ellas.
+Si tu workspace tiene un `AGENTS.md` global, este archivo gana sobre él.
 
 ## Commands
 

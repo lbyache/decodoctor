@@ -6,7 +6,7 @@ medicamento, concentración y posología, con un nivel de confianza. El empleado
 deriva la receta al farmacéutico. Las correcciones se aprenden localmente.
 
 > DecoDoctor es una ayuda de lectura. **No reemplaza la validación del farmacéutico** ni autoriza
-> ninguna dispensa.
+> ninguna dispensa. No es un dispositivo médico ni está validado clínicamente (ver [NOTICE.md](NOTICE.md)).
 
 ## Cómo funciona
 
@@ -43,3 +43,13 @@ Comandos de build y tests en [AGENTS.md](AGENTS.md).
 
 MVP en desarrollo. El diccionario actual es una **semilla manual** de medicamentos frecuentes;
 falta importar el listado de ANMAT (ver [TODO.md](TODO.md) y el ADR 0003).
+
+## Contribuir
+
+Issues y pull requests son bienvenidos. Antes de proponer un cambio grande, mirá los ADRs en
+`docs/arch/decisions/`. **Nunca subas fotos de recetas reales** ni datos de pacientes: para
+ejemplos, usá recetas inventadas.
+
+## Licencia
+
+[MIT](LICENSE). Avisos médicos, de marcas y de datos en [NOTICE.md](NOTICE.md).

@@ -12,12 +12,12 @@
 - [ ] Probar en iPhone real: escáner de VisionKit y Foundation Models en el dispositivo.
 - [ ] Ícono de la app.
 - [ ] Linter y formatter (swift-format) y CI (`swift test` + build).
-- [ ] LICENSE (elegir licencia).
 - [ ] Tests de ViewModels (`ReviewViewModel`: atajo de confianza alta, guardado con renglones sin decidir).
 - [ ] Android: módulo `domain` en Kotlin que pase `shared/fixtures` (ver `android/README.md`).
 
 ## Hecho
 
+- [x] Repositorio público en GitHub con licencia MIT y NOTICE (aviso médico, marcas, datos).
 - [x] ADRs 0001–0003, pipeline y spec del dominio para Android.
 - [x] Dominio: matching tolerante a errores, posología, confianza, casos de uso; casos dorados compartidos.
 - [x] Data: diccionario semilla (80 medicamentos), historial y correcciones en SwiftData sin CloudKit.
