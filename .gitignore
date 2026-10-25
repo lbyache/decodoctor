@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Fotos de recetas: nunca al repo (datos de salud)
+samples/
+*.heic
+*.jpg
+*.jpeg
+!ios/App/Assets.xcassets/**
+
+# Datos crudos de ANMAT (se regeneran con el script)
+shared/dictionary/raw/
+
+# Secretos y firma
+.env
+*.p12
+*.mobileprovision
+*.local.xcconfig

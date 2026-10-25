@@ -1,0 +1,20 @@
+{
+  "description": "Casos dorados de matching: lecturas OCR de un renglón (top-N) → medicamento esperado. Los corren iOS (GoldenFixtureTests) y Android. expectedMedicationID null = el renglón no es un medicamento.",
+  "cases": [
+    { "name": "lectura limpia", "ocr": ["Amoxicilina 500 mg"], "expectedMedicationID": "amoxicilina" },
+    { "name": "letra que falta", "ocr": ["Amoxicilna 500"], "expectedMedicationID": "amoxicilina" },
+    { "name": "cero por o", "ocr": ["Omepraz0l 20 mg"], "expectedMedicationID": "omeprazol" },
+    { "name": "uno por ele", "ocr": ["C1onazepam 0,5"], "expectedMedicationID": "clonazepam" },
+    { "name": "rn por m", "ocr": ["Arnlodipina 5 mg"], "expectedMedicationID": "amlodipina" },
+    { "name": "marca comercial", "ocr": ["Ibupirac 600"], "expectedMedicationID": "ibuprofeno" },
+    { "name": "marca con error", "ocr": ["Tafirl 1g"], "expectedMedicationID": "paracetamol" },
+    { "name": "acentos y mayúsculas", "ocr": ["LOSARTAN 50MG"], "expectedMedicationID": "losartan" },
+    { "name": "segunda lectura correcta", "ocr": ["Enolopnil 10", "Enalapril 10"], "expectedMedicationID": "enalapril" },
+    { "name": "nombre de dos palabras", "ocr": ["acido acetilsalicilico 100"], "expectedMedicationID": "acido-acetilsalicilico" },
+    { "name": "letra muy deformada", "ocr": ["Atorvastafna 20"], "expectedMedicationID": "atorvastatina" },
+    { "name": "encabezado de receta", "ocr": ["Dr. Juan Pérez - Médico clínico"], "expectedMedicationID": null },
+    { "name": "fecha", "ocr": ["Fecha: 12/10/2026"], "expectedMedicationID": null },
+    { "name": "renglón de posología solo", "ocr": ["1 comp c/8 hs x 7 días"], "expectedMedicationID": null },
+    { "name": "diagnóstico", "ocr": ["Dx: faringitis aguda"], "expectedMedicationID": null }
+  ]
+}

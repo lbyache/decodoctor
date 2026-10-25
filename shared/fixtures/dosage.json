@@ -1,0 +1,16 @@
+{
+  "description": "Casos dorados del parser de posología. Campos ausentes = no se espera que se detecten.",
+  "cases": [
+    { "text": "Amoxicilina 500 mg 1 comp c/8 hs x 7 días", "strength": "500 mg", "dose": "1 comprimido", "everyHours": 8, "days": 7 },
+    { "text": "1 comp cada 12 horas", "dose": "1 comprimido", "everyHours": 12 },
+    { "text": "Ibuprofeno 600 1/2 comp c/6h", "dose": "1/2 comprimido", "everyHours": 6 },
+    { "text": "20 gotas 3 veces por día", "dose": "20 gotas", "everyHours": 8 },
+    { "text": "1 caps por día durante 30 días", "dose": "1 cápsula", "everyHours": 24, "days": 30 },
+    { "text": "Omeprazol 20 mg N° 2", "strength": "20 mg", "boxes": 2 },
+    { "text": "Salbutamol 2 puff c/4-6 hs", "dose": "2 puff", "everyHours": 4 },
+    { "text": "Clonazepam 0,5 mg 1 comp a la noche", "strength": "0,5 mg", "dose": "1 comprimido" },
+    { "text": "Vitamina D3 100.000 UI 1 ampolla", "strength": "100.000 UI", "dose": "1 ampolla" },
+    { "text": "l caps por día", "dose": "1 cápsula", "everyHours": 24 },
+    { "text": "Dr. Juan Pérez" }
+  ]
+}
